@@ -1,3 +1,22 @@
+/* 
+   Color Palette:
+   peachpuff
+   black
+   brown: #242424
+*/
+
+/* CSS VARIABLES */
+:root {
+  --brown: #242424;
+  --peach: peachpuff;
+  --black: black;
+}
 h1 {
-  color: peachpuff;
+  color: var(--peach);
+}
+h2 {
+  color: var(--brown);
+}
+p {
+  color: var(--black);
 }
