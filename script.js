@@ -7,3 +7,7 @@ const products = [
   { name: "T-shirt", price: 50, category: "clothing" },
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
+
+/* CASE 1 */
+
+/* CASE 2 */
