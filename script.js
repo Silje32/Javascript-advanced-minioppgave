@@ -10,17 +10,15 @@ const products = [
 
 /* CASE 1 */
 
-const products.filter() {
-    if (price < 200) {
-        console.log("name");
-    }
-
-}; 
-
 /* 
   Bruk .filter() for å hente ut alle produkter som koster mindre enn 200 gullmynter. 
   Disse varene selger hun ofte ut raskt, og hun vil gjerne ha dem samlet i en liste. 
 */
+
+products.filter();
+if (price < 200) {
+  console.log("name");
+}
 
 /*
   Bruk .map() for å lage en liste som kun inneholder navnene på produktene. 
