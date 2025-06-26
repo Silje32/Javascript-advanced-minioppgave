@@ -15,10 +15,8 @@ const products = [
   Disse varene selger hun ofte ut raskt, og hun vil gjerne ha dem samlet i en liste. 
 */
 
-products.filter();
-if (price < 200) {
-  console.log("name");
-}
+let newarr = products.filter((money) => money.price <= 200);
+console.log(newarr);
 
 /*
   Bruk .map() for å lage en liste som kun inneholder navnene på produktene. 
