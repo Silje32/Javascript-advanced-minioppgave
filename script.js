@@ -48,6 +48,9 @@ console.log(electronicNames);
   Hvis ja, vil Alva legge dem i et spesielt luksushjørne i butikken.
 */
 
+const luxury = products.some((money) => money === "category.electronics");
+console.log("Costs more than 1000 gold coins:", luxury);
+
 /* 
   Bruk .reduce() for å finne den totale kostnaden av alle produktene. 
   Alva må vite dette for å sette riktig pris på forsikringen av varene sine.
