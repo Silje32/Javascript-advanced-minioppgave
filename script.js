@@ -38,6 +38,8 @@ console.log(newArr);
   til produktene i kategorien "electronics".
 */
 
+let name = products.filter(electronics)
+
 /*
   Bruk .some() for å sjekke om det finnes produkter som koster mer enn 1000 gullmynter. 
   Hvis ja, vil Alva legge dem i et spesielt luksushjørne i butikken.
