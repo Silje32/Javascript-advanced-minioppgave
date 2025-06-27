@@ -15,14 +15,23 @@ const products = [
   Disse varene selger hun ofte ut raskt, og hun vil gjerne ha dem samlet i en liste. 
 */
 
-let newarr = products.filter((money) => money.price <= 200);
-console.log(newarr);
+let newArr = products.filter((money) => money.price <= 200);
+console.log(newArr);
 
 /*
   Bruk .map() for å lage en liste som kun inneholder navnene på produktene. 
   Alva vil bruke denne listen til å skrive ut skilt i butikken.
 */
 
+let newarr = newArr.map((name) => console.log(name));
+
+let newAarr = [];
+newArr.map((name) => {
+  console.log(name);
+  return products + name;
+});
+
+console.log(newArr);
 /*
   Alva elsker elektronikk, men hun har mistet oversikten over hva som finnes i denne kategorien. 
   Bruk en kjedet kombinasjon av .filter() og .map() for å lage en liste som kun inneholder navnene 
