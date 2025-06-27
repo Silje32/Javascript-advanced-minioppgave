@@ -23,32 +23,24 @@ console.log(newArr);
   Alva vil bruke denne listen til å skrive ut skilt i butikken.
 */
 
-let newarr = newArr.map((name) => console.log(name));
+const names = products.map((items) => items.name);
+console.log("names", names);
 
-let newAarr = [];
-newArr.map((name) => {
-  console.log(name);
-  return products + name;
-});
-
-console.log(newArr);
 /*
   Alva elsker elektronikk, men hun har mistet oversikten over hva som finnes i denne kategorien. 
   Bruk en kjedet kombinasjon av .filter() og .map() for å lage en liste som kun inneholder navnene 
   til produktene i kategorien "electronics".
 */
 
-let electronics = products.filter((items) => items.category);
-console.log(electronics);
+const electronicNames = products.map((items) => items.category);
+console.log(electronicNames);
 
-// let electronicNames = electronicNames.map((items) => items.category);
-// console.log(electronicNames);
 /*
   Bruk .some() for å sjekke om det finnes produkter som koster mer enn 1000 gullmynter. 
   Hvis ja, vil Alva legge dem i et spesielt luksushjørne i butikken.
 */
 
-const luxury = products.some((money) => money === "category.electronics");
+const luxury = products.some((money) => money <= "price");
 console.log("Costs more than 1000 gold coins:", luxury);
 
 /* 
@@ -56,7 +48,8 @@ console.log("Costs more than 1000 gold coins:", luxury);
   Alva må vite dette for å sette riktig pris på forsikringen av varene sine.
 */
 
-products.reduce((price) => {
-  console.log(price);
-  return price;
-}, 0);
+const priceTotal = products.reduce(
+  (acc, currentValue) => acc + currentValue.price,
+  0
+);
+console.log(`Total Price in the shop: ${priceTotal}kr`);
