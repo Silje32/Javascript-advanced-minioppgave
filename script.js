@@ -41,8 +41,8 @@ console.log(newArr);
 let electronics = products.filter((items) => items.category);
 console.log(electronics);
 
-let electronicNames = electronicNames.map((items) => items.category);
-console.log(electronicNames);
+// let electronicNames = electronicNames.map((items) => items.category);
+// console.log(electronicNames);
 /*
   Bruk .some() for å sjekke om det finnes produkter som koster mer enn 1000 gullmynter. 
   Hvis ja, vil Alva legge dem i et spesielt luksushjørne i butikken.
@@ -60,20 +60,3 @@ products.reduce((price) => {
   console.log(price);
   return price;
 }, 0);
-
-/* CASE 2 */
-
-/* Alva har bestemt seg for å rydde opp i lageret sitt ved å kjøre et stort salg. 
-   Hun trenger din hjelp til å analysere produktene og finne de beste måtene å sette 
-   opp tilbudene på. 
-*/
-
-/* 01. Finn alle produkter som koster mindre enn 200 */
-
-/* 02. Lag en liste med navnene på alle produktene */
-
-/* 03. Finn navnene på alle produkter i kategorien "clothing" */
-
-/* 04. Sjekk om det finnes produkter som koster mer enn 1000  */
-
-/* 05. Regn ut hvor mye hele lageret er verdt før salget starter  */
