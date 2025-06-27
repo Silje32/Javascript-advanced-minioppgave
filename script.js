@@ -56,4 +56,9 @@ console.log("Costs more than 1000 gold coins:", luxury);
   Alva må vite dette for å sette riktig pris på forsikringen av varene sine.
 */
 
+products.reduce((price) => {
+  console.log(price);
+  return price;
+}, 0);
+
 /* CASE 2 */
